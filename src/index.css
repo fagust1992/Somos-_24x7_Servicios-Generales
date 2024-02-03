@@ -1,0 +1,325 @@
+/* Colores */
+:root {
+  --color-fondo-body: #fff4f4;
+  --color-fondo-navbar: #0d0d0e;
+  --color-texto-navbar: #f9fafc;
+  --color-texto-enlace-activo: #1976d2;
+  --color-boton-toggler: #e0e9f3;
+  --color-fondo-text-banner: #ecdede;
+  --color-texto-text-banner: #111010;
+  --color-fondo-precios: #727171;
+  --color-texto-titulo-precios: #fff;
+  --color-boton-verde: #86b773;
+  --color-boton-naranja: #ddb146;
+}
+
+/* Ajustar la altura del menú */
+body {
+  background: var(--color-fondo-body);
+  overflow-x: hidden;
+}
+
+.navbar-light {
+  background-color: var(--color-fondo-navbar);
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color-texto-navbar);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--color-texto-enlace-activo);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: var(--color-boton-toggler);
+}
+
+/* Estilos para la imagen del carousel */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+}
+
+/* Estilos para centrar el texto y darle un tamaño de título */
+.title-header {
+  background: var(--color-fondo-text-banner);
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos para el slider */
+#carouselExampleCaptions {
+  /* Agrega estilos específicos para el slider si es necesario */
+}
+
+/* Cambiar el color del texto del slider */
+.carousel-caption h5,
+.carousel-caption p {
+  color: var(--color-texto-text-banner);
+}
+
+.banner-container {
+  margin-top: 20px;
+}
+
+.caracteristicas {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.titulo_caracteristicas {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Estilo para hacer las imágenes más pequeñas */
+.img-pequena {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* Estilo para agregar un margin-top a los párrafos */
+.con-margin-top {
+  margin-top: 10px;
+}
+
+/* Estilos para la sección de precios */
+.precios {
+  background: url("../../Limpieza/src/assets/precios-bg.jpg"), var(--color-fondo-precios);
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+  margin-top: 40px;
+}
+
+.precios .titulo {
+  text-align: center;
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: var(--color-texto-titulo-precios);
+  margin-bottom: 70px;
+}
+
+/* Estilos para los planes de precios */
+.precios .plan {
+  background: #fff;
+  text-align: center;
+  font-family: "Open Sans", Arial, Sans-serif;
+  padding: 50px 0;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.precios .plan .nombre {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.precios .plan .precio {
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.precios .plan .caracteristicas {
+  list-style: none;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.precios .plan .caracteristicas li {
+  font-size: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.precios .plan .btn {
+  width: 70%;
+  padding: 15px 0;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.precios .plan .btn:hover {
+  text-decoration: none;
+}
+
+.precios .plan.verde .nombre,
+.precios .plan.verde .precio {
+  color: var(--color-boton-verde);
+}
+
+.precios .plan.verde .btn {
+  color: var(--color-boton-verde);
+  border: 2px solid var(--color-boton-verde);
+}
+
+.precios .plan.verde .btn:hover {
+  background: var(--color-boton-verde);
+  color: #fff;
+}
+
+.precios .plan.active {
+  background: #0a2138;
+  color: #fff;
+}
+
+.precios .plan.active .btn {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.precios .plan.active .btn:hover {
+  background: #fff;
+  color: #4c8dce;
+}
+
+.precios .plan.naranja .nombre,
+.precios .plan.naranja .precio {
+  color: var(--color-boton-naranja);
+}
+
+.precios .plan.naranja .btn {
+  color: var(--color-boton-naranja);
+  border: 2px solid var(--color-boton-naranja);
+}
+
+.precios .plan.naranja .btn:hover {
+  background: var(--color-boton-naranja);
+  color: #fff;
+}
+
+
+
+.textos {
+  color: rgb(255, 241, 241);
+  text-align: center;
+  font-weight: 600;
+  margin: 200px 0;
+}
+
+.textos .primera_linea,
+.textos .segunda_linea {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 300;
+}
+
+.textos .primera_linea {
+  font-size: 35px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+.textos .segunda_linea {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+
+.textos .contenedor-btns a {
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: rgb(8, 8, 8);
+  padding: 12px 0;
+  font-weight: 600;
+  width: 235px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.textos .contenedor-btns a:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #4f4f4f;
+}
+.contacto{
+  margin-top: 30px;
+  background: #86b773;
+}
+.img-contact{
+ margin-top: 40px;
+}
+
+.clientes {
+  background: #2d353e;
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+.clientes .titulo {
+  text-align: center;
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.clientes .cliente {
+  text-align: center;
+}
+
+.clientes .cliente a {
+  display: block;
+}
+/* CSS */
+.img5 {
+  max-width: 100%;
+  height: auto;
+  width: 1000px;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+/* Estilo de la línea vertical */
+/* Widgets.css */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Columnas {
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: #2bbed1;
+  border-radius: 8px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconos {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.num {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #eef0f1;
+}
+
+p {
+  font-size: 1em;
+  color: #333;
+}

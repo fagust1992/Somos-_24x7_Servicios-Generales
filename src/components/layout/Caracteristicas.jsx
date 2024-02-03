@@ -1,0 +1,94 @@
+import React from "react";
+import icono1 from "../../assets/icono-araña.png";
+import icono2 from "../../assets/icono-alergia.png";
+import icono3 from "../../assets/icono-de-ratón.png";
+
+const Caracteristicas = () => {
+  return (
+    <div>
+      <div
+        className="text-banner"
+        style={{ background: "#F2FAB3", marginBottom: "0" }}
+      >
+        <h2
+          className="banner-title"
+          style={{
+            color: "#4a90e2",
+            textAlign: "center",
+            padding: "10px",
+            marginBottom: "30px",
+            marginTop: "30px",
+          }}
+        >
+          Expertos en Servicios de Limpieza y Sanitizacion
+        </h2>
+
+        <p
+          className="banner-paragraph"
+          style={{
+            color: "#333",
+            marginInline: "70px",
+            fontSize: "22px",
+            textTransform: "capitalize",
+          }}
+        >
+          En 24x7 Servicios de Limpieza, nos destacamos por ofrecer una amplia
+          variedad de servicios de limpieza, que van desde la limpieza de
+          alfombras y colchones hasta el cuidado de diferentes tipos de pisos.
+          Nuestra empresa se distingue por mantener elevados estándares en cada
+          uno de los servicios que brindamos. Estamos firmemente comprometidos
+          con la sostenibilidad ambiental, y todos nuestros procesos están
+          meticulosamente diseñados para minimizar tanto la huella hídrica como
+          la huella de carbono. En JyJ, nos encontramos en constante evolución
+          hacia la integración de políticas ecológicas como base fundamental de
+          nuestro trabajo. ¿Necesitas alguno de nuestros servicios? Haz clic
+          aquí para solicitarlo de manera inmediata.
+        </p>
+
+        <section className="caracteristicas" style={{ background: "#F2FAB3" }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h3 className="titulo_caracteristicas text-center">
+                  Peligros más comunes por la falta de limpieza
+                </h3>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-sm-4 caracteristica">
+                <img src={icono3} alt="" className="icono img-pequena" />
+                <h4 className="primera_linea">Ratones</h4>
+                <p className="parrafo con-margin-top">
+                  Es simple con un buen aseo la posibilidad de que aparezcan se
+                  reducen bastante de tener estás feas visitas.
+                </p>
+              </div>
+
+              <div className="col-sm-4 caracteristica">
+                <img src={icono1} alt="" className="icono img-pequena" />
+                <h4 className="primera_linea">Ácaros y arañas</h4>
+                <p className="parrafo">
+                  Que tienen distintas medidas de impacto en la salud, pero que
+                  se pueden evitar sin mayor dificultad con una buena limpieza
+                  del hogar
+                </p>
+              </div>
+
+              <div className="col-sm-4 caracteristica">
+                <img src={icono2} alt="" className="icono img-pequena" />
+                <h4 className="primera_linea">Alergias</h4>
+                <p className="parrafo">
+                  Las alergias se presentan con distintos con grados de
+                  gravedad, siendo que los casos más complejos llega al asma
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default Caracteristicas;
