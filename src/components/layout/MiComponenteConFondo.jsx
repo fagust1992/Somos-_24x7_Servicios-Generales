@@ -1,22 +1,6 @@
 import React from "react";
-
+import img_fondo from "../../assets/banner2.jpg";
 const MiComponenteConFondo = () => {
-  const estiloDelContenedor = {
-    position: "relative",
-    background: "url('../src/assets/banner2.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    color: "#fff",
-    fontFamily: "Arial, sans-serif",
-    fontWeight: "bold",
-    marginTop: "10px",
-  };
-
   const estiloSuperposicion = {
     position: "absolute",
     top: 0,
@@ -33,7 +17,24 @@ const MiComponenteConFondo = () => {
 
   return (
     <>
-      <div style={estiloDelContenedor}>
+      <div
+        style={{
+          position: "relative",
+
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          color: "#fff",
+          fontFamily: "Arial, sans-serif",
+          fontWeight: "bold",
+          marginTop: "10px",
+          backgroundImage: `url(${img_fondo})`,
+        }}
+      >
         <div style={estiloSuperposicion}></div>
         <div style={estiloTexto}>
           <h2>¿Por qué elegir 24x7 Empresa de ASEO?</h2>
