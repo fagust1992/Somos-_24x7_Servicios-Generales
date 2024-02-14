@@ -1,73 +1,67 @@
-import React, { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDiagramProject,
-  faUserGroup,
-  faLightbulb,
-  faMugHot,
-  faAward,
-} from "@fortawesome/free-solid-svg-icons";
-
+import React from "react";
 import Animation from "../../helpers/Animation";
-export const Widgets = () => {
+import imgHappyCustomers from "../../assets/iconos-clientes.png"; // Image path
+import imgCleanedFloors from "../../assets/icono-piso.png"; // Image path
+import imgSanitizedUpholstery from "../../assets/iconfinder-garbage-cleaning-properly-4454715_119745.png"; // Image path
+import imgGrowth from "../../assets/4232841.png"; // Image path
 
-
+export const Widgets = ({display=""}) => {
   return (
     <>
-      <section className="row widgets" >
-        <div className="col-12 col-md-2 col-lg-2 Columnas" >
+      <section className="row widgets" style={{display:display}}>
+        <div className="col-12 col-md-2 col-lg-2 Columnas">
           <div className="icon-container">
-            <FontAwesomeIcon icon={faDiagramProject} className="iconos" />
-            <span className="num" data-val="6" id="img1">
+            <img
+              src={imgHappyCustomers}
+              alt="Clientes Felices"
+              className="iconos_wigets"
+            />
+            <span className="num" data-val="237" id="img1">
               000
             </span>
-            <p>
-              proyectos <br /> completados
-            </p>
+            <p>Clientes Felices</p>
           </div>
         </div>
 
         <div className="col-12 col-md-2 col-lg-2 Columnas">
           <div className="icon-container">
-            <FontAwesomeIcon icon={faUserGroup} className="iconos" />
+            <img
+              src={imgCleanedFloors}
+              alt="Pisos Limpiados"
+              className="iconos_wigets"
+            />
+            <span className="num" data-val="160">
+              00
+            </span>
+            <p>Pisos limpiados</p>
+          </div>
+        </div>
+
+        <div className="col-12 col-md-2 col-lg-2 Columnas">
+          <div className="icon-container">
+            <img
+              src={imgSanitizedUpholstery}
+              alt="Tapicería Sanitizada"
+              className="iconos_wigets"
+            />
             <span className="num" data-val="100">
               00
             </span>
-            <p>Amig@s coders</p>
+            <p>Tapicería sanitizadas</p>
           </div>
         </div>
 
         <div className="col-12 col-md-2 col-lg-2 Columnas">
           <div className="icon-container">
-            <FontAwesomeIcon icon={faLightbulb} className="iconos" />
+            <img src={imgGrowth} alt="Crecimiento" className="iconos_wigets" />
             <span className="num" data-val="100">
-              00
+              %
             </span>
-            <p>Pensamientos Increíbles</p>
-          </div>
-        </div>
-
-        <div className="col-12 col-md-2 col-lg-2 Columnas">
-          <div className="icon-container">
-            <FontAwesomeIcon icon={faMugHot} className="iconos" />
-            <span className="num" data-val="10">
-              000
-            </span>
-            <p>tazas de café</p>
-          </div>
-        </div>
-
-        <div className="col-12 col-md-2 col-lg-2 Columnas">
-          <div className="icon-container">
-            <FontAwesomeIcon icon={faAward} className="iconos" />
-            <span className="num" data-val="100">
-              000
-            </span>
-            <p>Hackatones</p>
+            <p>Crecimiento</p>
           </div>
         </div>
       </section>
-      <Animation/>
+      <Animation />
     </>
   );
 };

@@ -4,15 +4,15 @@ import img3 from "../../assets/img3.jpg";
 
 export const Slider = () => {
   return (
-    
     <div
       id="carouselExampleCaptions"
       className="carousel slide"
       data-bs-ride="carousel"
     >
       <div className="title-header">
-        Limpieza de Servicio Especializado en escuelas y universidades. Creamos
-        espacios de aprendizaje sanitizados y confortables.
+        24x7 Servicios Generales Expertos en Limpieza de Servicio Especializado
+        en Centro Educativos y Instituciones. Creamos espacios de aprendizaje
+        sanitizados y confortables.
       </div>
       <div className="carousel-indicators">
         <button
@@ -40,23 +40,49 @@ export const Slider = () => {
         <div className="carousel-item active">
           <img src={img4} className="d-block w-100 h-auto" alt="First slide" />
           <div className="carousel-caption d-none d-md-block">
-            <h5 className="text-white">First slide label</h5>
-            <p className="text-white">Some representative placeholder content for the first slide.</p>
+            <h5 className="" style={{ color: "black" }}>
+              LIMPIEZA Y ASEO
+            </h5>
+            <p className="text-white">
+              <strong>
+                24x7 Servicios Generales es líder en ofrecer soluciones
+                integrales de apoyo en personal administrativo, limpieza y
+                mantenimiento para escuelas e instituciones. Con un enfoque
+                centrado en la excelencia
+              </strong>
+            </p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={img3} className="d-block w-100 h-auto" alt="Second slide" />
           <div className="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5  style={{color:"blue"}}> <strong>Estructuras</strong></h5>
+            <p>
+              <strong>
+                Ofrecemos tratamientos especializados para polvo y líquidos en
+                áreas altas, incluyendo paredes, techos y ventanas. Nuestro
+                enfoque incluye la preservación de espacios y estructuras
+                físicas, como las zonas verdes circundantes, asegurando entornos
+                seguros y bien mantenidos.
+              </strong>
+            </p>
           </div>
         </div>
         <div className="carousel-item">
           <img src={img} className="d-block w-100 h-auto" alt="Third slide" />
           <div className="carousel-caption d-none d-md-block">
-            <h5 className="">Third slide label</h5>
+            <h5 className="" style={{color:"blue"}}>
+              {" "}
+              <strong>LAVADO Y TRATAMIENTO</strong>
+            </h5>
             <p className="">
-              Some representative placeholder content for the third slide.
+              <strong>
+                Nuestros servicios incluyen lavado y tratamiento especializado
+                para tapicerías y áreas de alto tráfico, así como el
+                abrillantamiento de pisos y tratamientos para escaleras. Nos
+                dedicamos a mantener sus espacios limpios, brillantes y en
+                óptimas condiciones
+              </strong>
             </p>
           </div>
         </div>

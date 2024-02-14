@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Navbar */
 .navbar-light {
   background-color: var(--color-fondo-navbar);
   font-weight: bold;
@@ -36,14 +37,14 @@ body {
   background-color: var(--color-boton-toggler);
 }
 
-/* Estilos para la imagen del carousel */
+/* Carousel */
 .carousel-inner img {
   width: 100%;
   height: auto;
   max-height: 650px;
 }
 
-/* Estilos para centrar el texto y darle un tamaño de título */
+/* Título del banner */
 .title-header {
   background: var(--color-fondo-text-banner);
   margin-top: 20px;
@@ -52,48 +53,13 @@ body {
   font-size: 20px;
   margin-bottom: 25px;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos para el slider */
-#carouselExampleCaptions {
-  /* Agrega estilos específicos para el slider si es necesario */
-}
-
-/* Cambiar el color del texto del slider */
-.carousel-caption h5,
-.carousel-caption p {
-  color: var(--color-texto-text-banner);
-}
-
-.banner-container {
-  margin-top: 20px;
-}
-
-.caracteristicas {
-  margin-top: 20px;
-  margin-bottom: 70px;
-}
-
-.titulo_caracteristicas {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-/* Estilo para hacer las imágenes más pequeñas */
-.img-pequena {
-  max-width: 250px;
-  max-height: 250px;
-}
-
-/* Estilo para agregar un margin-top a los párrafos */
-.con-margin-top {
-  margin-top: 10px;
-}
-
-/* Estilos para la sección de precios */
+/* Precios */
 .precios {
-  background: url("../../Limpieza/src/assets/precios-bg.jpg"), var(--color-fondo-precios);
+  background: url("../../Limpieza/src/assets/precios-bg.jpg"),
+    var(--color-fondo-precios);
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -110,17 +76,20 @@ body {
   margin-bottom: 70px;
 }
 
-/* Estilos para los planes de precios */
+/* Planes de precios */
 .precios .plan {
-  background: #fff;
+  background: #d87f7f;
   text-align: center;
   font-family: "Open Sans", Arial, Sans-serif;
   padding: 50px 0;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
 }
-
-.precios .plan .nombre {
+.precio .blanco{
+  background: #fff;
+}
+.precios .plan .nombre,
+.precios .plan .precio {
   font-size: 32px;
   line-height: 32px;
   font-weight: 300;
@@ -157,10 +126,7 @@ body {
   text-decoration: none;
 }
 
-.precios .plan.verde .nombre,
-.precios .plan.verde .precio {
-  color: var(--color-boton-verde);
-}
+
 
 .precios .plan.verde .btn {
   color: var(--color-boton-verde);
@@ -202,8 +168,88 @@ body {
   color: #fff;
 }
 
+/* SobreNosotros.css */
 
+.custom-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  height: 330px;
+}
 
+.custom-banner h2 {
+  color: #ffffff;
+}
+
+.custom-banner p {
+  color: #ffffff;
+}
+/* index.css */
+.parrafo_banner_sobreNosotros {
+  background: #00003a;
+  border-radius: 3px;
+}
+.texto-sobre-nosotros-1 {
+  color: #ffffff;
+}
+.title-banner {
+  color: #af0b0b;
+}
+.custom-text,
+.custom-text2 {
+  color: #ffffff; /* Color de texto más suave */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #000000; /* Fondo de color pastel */
+  margin-bottom: 20px; /* Espacio entre párrafos */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+.custom-text2 {
+  background-color: #af0909;
+}
+.parrafo_sobre_nosotros {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background: #2b8996;
+  color: #0f0e0e;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.h2_sobre_nosotros {
+  color: #000;
+}
+.custom-text:last-child {
+  margin-bottom: 0; /* Elimina el espacio inferior para el último párrafo */
+}
+
+.custom-text p {
+  color: #7d7d7d; /* Color de texto en tono pastel */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 400; /* Grosor de la fuente */
+  margin-bottom: 10px; /* Espacio entre párrafos */
+}
+
+.custom-text p:last-child {
+  margin-bottom: 0; /* Elimina el espacio inferior para el último párrafo */
+}
+/* seccion sobre nosotros*/
+.service-banner {
+  background: #e5e9ee;
+  font-size: 18px;
+}
+
+.custom-banner-servicios {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  height: 400px;
+}
+
+/* Textos */
 .textos {
   color: rgb(255, 241, 241);
   text-align: center;
@@ -246,14 +292,92 @@ body {
   background: #fff;
   color: #4f4f4f;
 }
-.contacto{
-  margin-top: 30px;
-  background: #86b773;
-}
-.img-contact{
- margin-top: 40px;
+/* En el archivo Banner2_home.css */
+.banner-container {
+  margin-top: 5rem;
 }
 
+.banner-image {
+  height: 100%;
+  width: 100%;
+}
+
+.banner-text {
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.banner-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #7d84b2;
+}
+
+.banner-subtitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #b2616f;
+}
+.banner-subtitle2{
+color: #1976d2;
+}
+.banner-text {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #565656;
+  margin-bottom: 20px;
+}
+.banner-text-3 {
+  color: #ffffff;
+}
+
+.banner-container {
+  background: #000000;
+  padding: 40px;
+  text-align: center;
+}
+.banner-container2 {
+  background: #eb4b4b;
+  padding: 40px;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+/* Sección de contacto */
+.contacto {
+  margin-top: 30px;
+}
+.enlace_de_WhatsApp {
+  display: flex;
+  justify-content: start;
+}
+.icono-whastpp {
+  width: 90px;
+  height: 90px;
+}
+
+.parrafo_Contact_us {
+  background: #d5dbe2;
+  color: #000000;
+}
+
+.img-contact {
+  margin-top: 40px;
+}
+
+.h2_texto1-servicios{
+  color: rgb(206, 44, 33);
+}
+.h2_texto2-servicios{
+  color: rgb(247, 247, 247);
+}
+.Bienvenido{
+  color: rgb(206, 44, 33);
+}
+
+
+/* Sección de clientes */
 .clientes {
   background: #2d353e;
   padding: 40px 0;
@@ -276,7 +400,8 @@ body {
 .clientes .cliente a {
   display: block;
 }
-/* CSS */
+
+/* Imágenes */
 .img5 {
   max-width: 100%;
   height: auto;
@@ -286,9 +411,8 @@ body {
   margin: 0 auto;
   margin-top: 10px;
 }
-/* Estilo de la línea vertical */
-/* Widgets.css */
 
+/* Estilos para las columnas de widgets */
 .row {
   display: flex;
   justify-content: space-between;
@@ -322,4 +446,43 @@ body {
 p {
   font-size: 1em;
   color: #333;
+}
+.img-pequena {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.parrafo {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+.iconos_wigets {
+  width: 70px;
+  height: 70px;
+}
+.columnas_footer {
+  background: #f7fdf4;
+  border-radius: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 30px;
+}
+
+.h5_banner_footer {
+  font-size: 23px;
+  margin-top: 20px;
+}
+
+.texto_inferior_footer {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .columnas_footer {
+    background: #85e057;
+    margin-bottom: 3px;
+    margin: 0px 0px 3px 0px;
+  }
 }

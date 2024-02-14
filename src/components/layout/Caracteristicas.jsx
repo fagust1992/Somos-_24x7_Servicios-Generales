@@ -8,48 +8,47 @@ const Caracteristicas = () => {
     <div>
       <div
         className="text-banner"
-        style={{ background: "#F2FAB3", marginBottom: "0" }}
+        style={{ background: "#0A145A", marginBottom: "0" , color:"#fff"}}
       >
         <h2
           className="banner-title"
           style={{
-            color: "#4a90e2",
+            color: "#fff",
             textAlign: "center",
             padding: "10px",
             marginBottom: "30px",
-            marginTop: "30px",
+            marginTop: "40px",
           }}
         >
-          Expertos en Servicios de Limpieza y Sanitizacion
+          24x7 Servicios Generales Expertos en Servicios de Limpieza y
+          Sanitizacion
         </h2>
 
         <p
-          className="banner-paragraph"
-          style={{
-            color: "#333",
-            marginInline: "70px",
-            fontSize: "22px",
-            textTransform: "capitalize",
-          }}
-        >
-          En 24x7 Servicios de Limpieza, nos destacamos por ofrecer una amplia
-          variedad de servicios de limpieza, que van desde la limpieza de
-          alfombras y colchones hasta el cuidado de diferentes tipos de pisos.
-          Nuestra empresa se distingue por mantener elevados estándares en cada
-          uno de los servicios que brindamos. Estamos firmemente comprometidos
-          con la sostenibilidad ambiental, y todos nuestros procesos están
-          meticulosamente diseñados para minimizar tanto la huella hídrica como
-          la huella de carbono. En JyJ, nos encontramos en constante evolución
-          hacia la integración de políticas ecológicas como base fundamental de
-          nuestro trabajo. ¿Necesitas alguno de nuestros servicios? Haz clic
-          aquí para solicitarlo de manera inmediata.
-        </p>
+  className="banner-paragraph"
+  style={{
+    color: "#fff",
+    marginInline: "70px",
+    fontSize: "22px",
+    textAlign: "justify"
+  }}
+>
+  En 24x7 Servicios Generales ofrecemos el mas eficiente servicio integral de
+  apoyo en personal administrativo, de limpieza y mantención, en escuelas e
+  instituciones. Nuestra experiencia, dedicación y capacidad de adaptación, nos
+  permite crear planes de acción acorde a los requerimientos y necesidades de
+  cada caso. Nos esforzamos por consolidarnos como referentes en la gestión de
+  servicios: limpieza, desinfección y sanitización en: salas, oficinas, casinos,
+  laboratorios, baños, áreas comunes de superficie y/o altura; mediante la
+  capacitación de la red de colaboradores y adaptación de nuevas tecnologías, que
+  nos permitan obtener un altísimo nivel de fidelización de nuestros clientes.
+</p>
 
-        <section className="caracteristicas" style={{ background: "#F2FAB3" }}>
+        <section className="caracteristicas" style={{ background: "#0A145A",marginTop:"30px" }}>
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h3 className="titulo_caracteristicas text-center">
+                <h3 className="titulo_caracteristicas text-center ">
                   Peligros más comunes por la falta de limpieza
                 </h3>
               </div>
@@ -59,7 +58,7 @@ const Caracteristicas = () => {
               <div className="col-sm-4 caracteristica">
                 <img src={icono3} alt="" className="icono img-pequena" />
                 <h4 className="primera_linea">Ratones</h4>
-                <p className="parrafo con-margin-top">
+                <p className="parrafo con-margin-top text-white">
                   Es simple con un buen aseo la posibilidad de que aparezcan se
                   reducen bastante de tener estás feas visitas.
                 </p>
@@ -68,7 +67,7 @@ const Caracteristicas = () => {
               <div className="col-sm-4 caracteristica">
                 <img src={icono1} alt="" className="icono img-pequena" />
                 <h4 className="primera_linea">Ácaros y arañas</h4>
-                <p className="parrafo">
+                <p className="parrafo text-white">
                   Que tienen distintas medidas de impacto en la salud, pero que
                   se pueden evitar sin mayor dificultad con una buena limpieza
                   del hogar
@@ -78,7 +77,7 @@ const Caracteristicas = () => {
               <div className="col-sm-4 caracteristica">
                 <img src={icono2} alt="" className="icono img-pequena" />
                 <h4 className="primera_linea">Alergias</h4>
-                <p className="parrafo">
+                <p className="parrafo text-white">
                   Las alergias se presentan con distintos con grados de
                   gravedad, siendo que los casos más complejos llega al asma
                 </p>
