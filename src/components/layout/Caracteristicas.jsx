@@ -1,6 +1,6 @@
 import React from "react";
 import icono1 from "../../assets/icono-araña.png";
-import icono2 from "../../assets/icono-alergia.png";
+import icono2 from "../../assets/Icono-alergia.png";
 import icono3 from "../../assets/icono-de-ratón.png";
 
 const Caracteristicas = () => {
