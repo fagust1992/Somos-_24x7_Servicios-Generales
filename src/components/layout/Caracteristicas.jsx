@@ -29,7 +29,7 @@ const Caracteristicas = () => {
   style={{
     color: "#fff",
     marginInline: "70px",
-    fontSize: "22px",
+    fontSize: "18px",
     textAlign: "justify"
   }}
 >
