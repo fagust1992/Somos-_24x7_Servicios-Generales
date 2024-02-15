@@ -20,7 +20,7 @@ const Animation = () => {
               let tiempo = setInterval(function () {
                 inicioValor += 1;
                 valueDisplay.textContent = inicioValor;
-                if (inicioValor == endValue) {
+                if (inicioValor === endValue) {
                   clearInterval(tiempo);
                 }
               }, duracion);
@@ -37,12 +37,13 @@ const Animation = () => {
 
       observador.observe(imagen1);
 
-      // Asegúrate de desconectar el observador cuando el componente se desmonte
       return () => {
         observador.disconnect();
       };
     }
-  }, []); // El segundo argumento del useEffect está vacío para que se ejecute solo una vez al montar el componente
+  }, []);
+
+  return null; 
 };
 
 export default Animation;
