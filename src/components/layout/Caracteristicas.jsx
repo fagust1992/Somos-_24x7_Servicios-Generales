@@ -18,7 +18,7 @@ const Caracteristicas = () => {
             padding: "10px",
             marginBottom: "30px",
             marginTop: "40px",
-            fontSize: "22px",
+            fontSize: "18px",
           }}
         >
           24x7 Servicios Generales Expertos en Servicios de Limpieza y
