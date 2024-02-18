@@ -6,14 +6,13 @@ const Animation2 = () => {
     console.log(imagen11)
 
     if (imagen11) {
-      const cargarImagen = (entradas, observador) => {
-        entradas.forEach((entrada) => {
-          if (entrada.isIntersecting) {
-            imagen11.classList.add("visible");
-    
-          } 
-        });
-      };
+        const cargarImagen = (entradas, observador) => {
+            entradas.forEach((entrada) => {
+              if (entrada.isIntersecting) {
+                entrada.target.classList.add("visible");
+              } 
+            });
+          };
 
       const observador = new IntersectionObserver(cargarImagen, {
         root: null,
