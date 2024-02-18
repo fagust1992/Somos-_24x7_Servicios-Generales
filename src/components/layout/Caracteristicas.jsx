@@ -2,7 +2,7 @@ import React from "react";
 import icono1 from "../../assets/icono-araña.png";
 import icono2 from "../../assets/Icono-alergia.png";
 import icono3 from "../../assets/icono-de-ratón.png";
-import Animation2 from "../../helpers/Animation2";
+
 
 const Caracteristicas = () => {
   return (
@@ -98,7 +98,7 @@ const Caracteristicas = () => {
         </section>
 
       </div>
-    <Animation2/>
+
     </div>
 
   );
