@@ -7,7 +7,7 @@ import Animation2 from "../../helpers/Animation2";
 const Caracteristicas = () => {
   return (
 
-    <div  className="visible">
+    <div>
       <div
         className="text-banner  " id="caracteristicas"
         style={{ background: "#0A145A", marginBottom: "0", color: "#fff" }}
