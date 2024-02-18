@@ -2,12 +2,14 @@ import React from "react";
 import icono1 from "../../assets/icono-araña.png";
 import icono2 from "../../assets/Icono-alergia.png";
 import icono3 from "../../assets/icono-de-ratón.png";
+import Animation2 from "../../helpers/Animation2";
 
 const Caracteristicas = () => {
   return (
-    <div>
+
+    <div  className="visible">
       <div
-        className="text-banner"
+        className="text-banner  " id="caracteristicas"
         style={{ background: "#0A145A", marginBottom: "0", color: "#fff" }}
       >
         <h6
@@ -48,7 +50,7 @@ const Caracteristicas = () => {
         </p>
 
         <section
-          className="caracteristicas"
+          className="caracteristicas "
           style={{ background: "#0A145A", marginTop: "30px" }}
         >
           <div className="container">
@@ -94,8 +96,11 @@ const Caracteristicas = () => {
             </div>
           </div>
         </section>
+
       </div>
+    <Animation2/>
     </div>
+
   );
 };
 
