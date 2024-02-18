@@ -2,6 +2,7 @@ import React from "react";
 import icono1 from "../../assets/icono-araña.png";
 import icono2 from "../../assets/Icono-alergia.png";
 import icono3 from "../../assets/icono-de-ratón.png";
+import Animation2 from "../../helpers/Animation2";
 
 
 const Caracteristicas = () => {
@@ -67,7 +68,7 @@ const Caracteristicas = () => {
 
             <div className="row">
               <div className="col-sm-4 caracteristica">
-                <img src={icono3} alt="" className="icono img-pequena" />
+                <img src={icono3} alt="" className="icono img-pequena imagen" />
                 <h4 className="primera_linea"       style={{ fontSize: "22px" }}>Ratones</h4 >
                 <p className="parrafo con-margin-top text-white">
                   Es simple con un buen aseo la posibilidad de que aparezcan se
@@ -76,7 +77,7 @@ const Caracteristicas = () => {
               </div>
 
               <div className="col-sm-4 caracteristica">
-                <img src={icono1} alt="" className="icono img-pequena" />
+                <img src={icono1} alt="" className="icono img-pequena " />
                 <h4 className="primera_linea" style={{ fontSize: "22px" }}>Ácaros y arañas</h4>
                 <p className="parrafo text-white">
                   Que tienen distintas medidas de impacto en la salud, pero que
@@ -86,7 +87,8 @@ const Caracteristicas = () => {
               </div>
 
               <div className="col-sm-4 caracteristica">
-                <img src={icono2} alt="" className="icono img-pequena" />
+
+                <img src={icono2} alt="" className="icono img-pequena " />
                 <h4 className="primera_linea">Alergias</h4>
                 <p className="parrafo text-white">
                   Las alergias se presentan con distintos con grados de
@@ -98,7 +100,7 @@ const Caracteristicas = () => {
         </section>
 
       </div>
-
+<Animation2/>
     </div>
 
   );

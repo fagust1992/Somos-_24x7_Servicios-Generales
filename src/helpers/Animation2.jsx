@@ -1,15 +1,15 @@
-import  { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const Animation2 = () => {
   useEffect(() => {
-    const imagen11 = document.getElementById("caracteristicas");
+    const imagen11 = document.querySelector(".imagen");
     console.log(imagen11)
 
     if (imagen11) {
         const cargarImagen = (entradas, observador) => {
             entradas.forEach((entrada) => {
               if (entrada.isIntersecting) {
-                entrada.target.classList.add("visible");
+        imagen11.classList.add("visible");
               } 
             });
           };
