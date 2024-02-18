@@ -77,7 +77,7 @@ const Caracteristicas = () => {
               </div>
 
               <div className="col-sm-4 caracteristica">
-                <img src={icono1} alt="" className="icono img-pequena " />
+                <img src={icono1} alt="" className="icono img-pequena imagen" />
                 <h4 className="primera_linea" style={{ fontSize: "22px" }}>Ácaros y arañas</h4>
                 <p className="parrafo text-white">
                   Que tienen distintas medidas de impacto en la salud, pero que
@@ -88,7 +88,7 @@ const Caracteristicas = () => {
 
               <div className="col-sm-4 caracteristica">
 
-                <img src={icono2} alt="" className="icono img-pequena " />
+                <img src={icono2} alt="" className="icono img-pequena imagen" />
                 <h4 className="primera_linea">Alergias</h4>
                 <p className="parrafo text-white">
                   Las alergias se presentan con distintos con grados de

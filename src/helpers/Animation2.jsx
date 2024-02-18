@@ -2,17 +2,17 @@ import React, { useEffect } from 'react';
 
 const Animation2 = () => {
   useEffect(() => {
-    const imagen11 = document.querySelector(".imagen");
-    console.log(imagen11)
+    const imagenes = document.querySelectorAll(".imagen");
+    console.log(imagenes);
 
-    if (imagen11) {
-        const cargarImagen = (entradas, observador) => {
-            entradas.forEach((entrada) => {
-              if (entrada.isIntersecting) {
-        imagen11.classList.add("visible");
-              } 
-            });
-          };
+    if (imagenes.length > 0) {
+      const cargarImagen = (entradas, observador) => {
+        entradas.forEach((entrada) => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add("visible");
+          } 
+        });
+      };
 
       const observador = new IntersectionObserver(cargarImagen, {
         root: null,
@@ -20,7 +20,9 @@ const Animation2 = () => {
         threshold: 1.0,
       });
 
-      observador.observe(imagen11);
+      imagenes.forEach((imagen) => {
+        observador.observe(imagen);
+      });
 
       return () => {
         observador.disconnect();
@@ -32,3 +34,4 @@ const Animation2 = () => {
 };
 
 export default Animation2;
+
