@@ -102,7 +102,7 @@ const Banner = () => {
           <img
             src={img2}
             alt="Imagen del banner"
-            className="img-fluid rounded border  imagen"
+            className="img-fluid rounded border  "
             style={imageStyle}
           />
         </div>
