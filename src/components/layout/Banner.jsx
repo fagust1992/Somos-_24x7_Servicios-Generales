@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/img-Banner.jpg";
+import img1 from "../../assets/Img-banner2_home.jpg";
 import img2 from "../../assets/img-Banner2.webp";
 import Animation2 from "../../helpers/Animation2";
 
