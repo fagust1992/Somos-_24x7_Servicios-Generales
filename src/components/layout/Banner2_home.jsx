@@ -7,7 +7,7 @@ export const Banner2_home = () => {
       <div className="container banner-container my-5">
         <div className="row">
           <div className="col-md-6 p-0">
-            <img src={img5} alt="" className="img-fluid banner-image" />
+            <img src={img5} alt="" className="img-fluid banner-image  imagen" />
           </div>
           <div className="col-md-6 p-0 banner-text">
             <p className="m-0 text-white">

@@ -1,6 +1,8 @@
 import React from "react";
 import img1 from "../../assets/img-Banner.jpg";
 import img2 from "../../assets/img-Banner2.webp";
+import Animation2 from "../../helpers/Animation2";
+
 
 const Banner = () => {
   const imageStyle = {
@@ -23,7 +25,7 @@ const Banner = () => {
           <img
             src={img1}
             alt="Imagen del banner"
-            className="img-fluid rounded border"
+            className="img-fluid rounded border imagen"
             style={imageStyle}
           />
         </div>
@@ -100,13 +102,15 @@ const Banner = () => {
           <img
             src={img2}
             alt="Imagen del banner"
-            className="img-fluid rounded border"
+            className="img-fluid rounded border  imagen"
             style={imageStyle}
           />
         </div>
       </div>
+      <Animation2/>
     </div>
   );
+
 };
 
 export default Banner;

@@ -4,13 +4,12 @@ import icono2 from "../../assets/Icono-alergia.png";
 import icono3 from "../../assets/icono-de-ratón.png";
 import Animation2 from "../../helpers/Animation2";
 
-
 const Caracteristicas = () => {
   return (
-
     <div>
       <div
-        className="text-banner  " id="caracteristicas"
+        className="text-banner  "
+        id="caracteristicas"
         style={{ background: "#0A145A", marginBottom: "0", color: "#fff" }}
       >
         <h6
@@ -69,7 +68,9 @@ const Caracteristicas = () => {
             <div className="row">
               <div className="col-sm-4 caracteristica">
                 <img src={icono3} alt="" className="icono img-pequena imagen" />
-                <h4 className="primera_linea"       style={{ fontSize: "22px" }}>Ratones</h4 >
+                <h4 className="primera_linea" style={{ fontSize: "22px" }}>
+                  Ratones
+                </h4>
                 <p className="parrafo con-margin-top text-white">
                   Es simple con un buen aseo la posibilidad de que aparezcan se
                   reducen bastante de tener estás feas visitas.
@@ -78,7 +79,9 @@ const Caracteristicas = () => {
 
               <div className="col-sm-4 caracteristica">
                 <img src={icono1} alt="" className="icono img-pequena imagen" />
-                <h4 className="primera_linea" style={{ fontSize: "22px" }}>Ácaros y arañas</h4>
+                <h4 className="primera_linea" style={{ fontSize: "22px" }}>
+                  Ácaros y arañas
+                </h4>
                 <p className="parrafo text-white">
                   Que tienen distintas medidas de impacto en la salud, pero que
                   se pueden evitar sin mayor dificultad con una buena limpieza
@@ -87,7 +90,6 @@ const Caracteristicas = () => {
               </div>
 
               <div className="col-sm-4 caracteristica">
-
                 <img src={icono2} alt="" className="icono img-pequena imagen" />
                 <h4 className="primera_linea">Alergias</h4>
                 <p className="parrafo text-white">
@@ -98,11 +100,18 @@ const Caracteristicas = () => {
             </div>
           </div>
         </section>
-
       </div>
-<Animation2/>
+      <Animation2 />
+      <p>
+        Me describo como una persona comprometida, adaptable y con una sólida
+        ética de trabajo. Poseo habilidades en [menciona tus áreas de
+        experiencia], y estoy siempre dispuesto/a a aprender y crecer
+        profesionalmente. Soy conocido/a por [menciona una cualidad o habilidad
+        específica], y me esfuerzo por colaborar de manera efectiva en equipos
+        multidisciplinarios. Estoy emocionado/a por nuevas oportunidades que me
+        permitan contribuir y seguir desarrollándome
+      </p>
     </div>
-
   );
 };
 
