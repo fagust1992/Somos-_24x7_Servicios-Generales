@@ -17,6 +17,9 @@
 body {
   background: var(--color-fondo-body);
   overflow-x: hidden;
+  
+
+  
 }
 .navbar-nav .nav-link:hover {
   background-color: blue; 
