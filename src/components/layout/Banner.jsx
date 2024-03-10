@@ -30,7 +30,7 @@ const Banner = () => {
           />
         </div>
         <div className="col-md-6">
-          <div className="p-4" style={{ background: "#B3FAE9" }}>
+          <div className="p-4" style={{ background: "#B3FAE9",  fontSize:"15px"}}>
             <h2 className="text-primary">Ambientes Educativos Protegidos</h2>
             <p className="text-muted mb-4" style={paragraphStyle}>
               Es nuestro compromiso con la creación de ambientes educativos
@@ -69,7 +69,7 @@ const Banner = () => {
       </div>
       <div className="row align-items-center">
         <div className="col-md-6">
-          <div className="p-2 " style={{ background: "#F2FAB3" }}>
+          <div className="p-2 " style={{ background: "#F2FAB3",  fontSize:"15px"}}>
             <h2 className="text-primary">Instituciones</h2>
             <p className="text-muted mb-4" style={paragraphStyle}>
               <strong>Compromiso con la Confianza Pública y Privada</strong>: En

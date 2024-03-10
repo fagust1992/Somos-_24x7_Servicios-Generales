@@ -1,5 +1,6 @@
 import React from "react";
 import img_fondo from "../../assets/banner2.jpg";
+
 const MiComponenteConFondo = () => {
   const estiloSuperposicion = {
     position: "absolute",
@@ -11,8 +12,12 @@ const MiComponenteConFondo = () => {
   };
 
   const estiloTexto = {
-    zIndex: 1, // Asegura que el texto esté sobre la superposición
+    zIndex: 2, // Asegura que el texto esté sobre la superposición
     color: "#fff", // Color blanco
+    fontSize: "16px",
+    fontWeight: "bolder",
+    textAlign: "justify",
+    marginInline: "30px",
   };
 
   return (
@@ -20,7 +25,6 @@ const MiComponenteConFondo = () => {
       <div
         style={{
           position: "relative",
-
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "100vh",
@@ -33,20 +37,13 @@ const MiComponenteConFondo = () => {
           fontWeight: "bold",
           marginTop: "10px",
           backgroundImage: `url(${img_fondo})`,
+      
         }}
       >
         <div style={estiloSuperposicion}></div>
         <div style={estiloTexto}>
-          <h2>¿Por qué elegir 24x7 Empresa de ASEO?</h2>
-          <p
-            className="text-white"
-            style={{
-              fontWeight: "bolder",
-              fontSize: "18px",
-              textAlign: "justify",
-              marginInline: "70px",
-            }}
-          >
+          <h2 style={{ marginBottom: "10px" }}>¿Por qué elegir 24x7 Empresa de ASEO?</h2>
+          <p className="text-white" style={{fontSize:"12px"}}>
             Contamos con años de servicio en material de aseo y limpieza, lo
             cual se ve reflejado en nuestra carta de presentación con clientes
             satisfechos a los cuales hemos acompañado por años. Nuestro servicio

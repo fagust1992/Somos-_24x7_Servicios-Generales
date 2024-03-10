@@ -1,3 +1,4 @@
+import React from "react";
 import imgProject from "../../assets/icono_honestidad.png";
 import imgUserGroup from "../../assets/icono_confianza.png";
 import imgLightbulb from "../../assets/icono_trabajo_en_Euipo.png";
@@ -7,12 +8,13 @@ export const Banner_footer = () => {
   const imageSize = "200px";
 
   return (
-    <>
-      <section className="row  container-fluid">
+    <section className="container-fluid">
+      <div className="row justify-content-center">
         <h5 className="text-center text-white h5_banner_footer">
           Nuestros valores
         </h5>
-        <div className="col-12 col-md-2 col-lg-2 columnas_footer">
+
+        <div className="col-11 col-md-2 col-lg-2 columnas_footer">
           <div className="icon-container">
             <img
               src={imgProject}
@@ -28,7 +30,7 @@ export const Banner_footer = () => {
           </div>
         </div>
 
-        <div className="col-12 col-md-2 col-lg-2 columnas_footer">
+        <div className="col-11 col-md-2 col-lg-2 columnas_footer">
           <div className="icon-container">
             <img
               src={imgUserGroup}
@@ -44,7 +46,7 @@ export const Banner_footer = () => {
           </div>
         </div>
 
-        <div className="col-12 col-md-2 col-lg-2 columnas_footer">
+        <div className="col-11 col-md-2 col-lg-2 columnas_footer">
           <div className="icon-container">
             <img
               src={imgLightbulb}
@@ -60,7 +62,7 @@ export const Banner_footer = () => {
           </div>
         </div>
 
-        <div className="col-12 col-md-2 col-lg-2 columnas_footer x">
+        <div className="col-11 col-md-2 col-lg-2 columnas_footer x">
           <div className="icon-container">
             <img
               src={imgMugHot}
@@ -75,21 +77,22 @@ export const Banner_footer = () => {
             </p>
           </div>
         </div>
-        <span className="texto_inferior_footer text-center text-white">
+      </div>
+
+      <div className="text-center" style={{ margin: "0 20px" }}> {/* Agregar margen horizontal aquí */}
+        <span className="texto_inferior_footer text-white">
           Trabajamos con amor ❤️🩷🧡💛💚💙
         </span>
-        <h6 className="text-white text-center mt-2"> Contacto</h6>
-
-        <p className="text-white text-center">+56951925873</p>
-        <p className="text-white text-center">24x7sgenerales@gmail.com</p>
-
+        <h6 className="text-white mt-2"> Contacto</h6>
+        <p className="text-white">+56951925873</p>
+        <p className="text-white">24x7sgenerales@gmail.com</p>
         <span
-          className="texto_autor text-center text-white"
+          className="texto_autor text-white"
           style={{ fontSize: "15px", marginTop: "10px" }}
         >
           Bajo todos los derechos reservados - Hecho por Francisco August
         </span>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };

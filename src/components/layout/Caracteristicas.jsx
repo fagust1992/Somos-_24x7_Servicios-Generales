@@ -31,8 +31,8 @@ const Caracteristicas = () => {
           className="banner-paragraph"
           style={{
             color: "#fff",
-            marginInline: "70px",
-            fontSize: "18px",
+            marginInline: "40px",
+            fontSize: "15px",
             textAlign: "justify",
           }}
         >
@@ -50,14 +50,14 @@ const Caracteristicas = () => {
         </p>
 
         <section
-          className="caracteristicas "
+          className="caracteristicas"
           style={{ background: "#0A145A", marginTop: "30px" }}
         >
           <div className="container">
             <div className="row">
               <div className="col-md-12">
                 <h3
-                  className="titulo_caracteristicas text-center "
+                  className="titulo_caracteristicas text-center"
                   style={{ fontSize: "22px" }}
                 >
                   Peligros más comunes por la falta de limpieza
@@ -66,33 +66,33 @@ const Caracteristicas = () => {
             </div>
 
             <div className="row">
-              <div className="col-sm-4 caracteristica">
+              <div className="col-sm-4 caracteristica text-center"> {/* Agregar la clase 'text-center' aquí */}
                 <img src={icono3} alt="" className="icono img-pequena imagen" />
                 <h4 className="primera_linea" style={{ fontSize: "22px" }}>
                   Ratones
                 </h4>
-                <p className="parrafo con-margin-top text-white">
+                <p className="parrafo con-margin-top text-white" style={{fontSize:"15px"}}>
                   Es simple con un buen aseo la posibilidad de que aparezcan se
                   reducen bastante de tener estás feas visitas.
                 </p>
               </div>
 
-              <div className="col-sm-4 caracteristica">
+              <div className="col-sm-4 caracteristica text-center"> {/* Agregar la clase 'text-center' aquí */}
                 <img src={icono1} alt="" className="icono img-pequena imagen" />
                 <h4 className="primera_linea" style={{ fontSize: "22px" }}>
                   Ácaros y arañas
                 </h4>
-                <p className="parrafo text-white">
+                <p className="parrafo text-white"  style={{fontSize:"15px"}}>
                   Que tienen distintas medidas de impacto en la salud, pero que
                   se pueden evitar sin mayor dificultad con una buena limpieza
                   del hogar
                 </p>
               </div>
 
-              <div className="col-sm-4 caracteristica">
+              <div className="col-sm-4 caracteristica text-center"> {/* Agregar la clase 'text-center' aquí */}
                 <img src={icono2} alt="" className="icono img-pequena imagen" />
                 <h4 className="primera_linea">Alergias</h4>
-                <p className="parrafo text-white">
+                <p className="parrafo text-white"  style={{fontSize:"15px"}}>
                   Las alergias se presentan con distintos con grados de
                   gravedad, siendo que los casos más complejos llega al asma
                 </p>
@@ -100,17 +100,18 @@ const Caracteristicas = () => {
             </div>
           </div>
         </section>
+
       </div>
       <Animation2 />
-      <p>
-        Me describo como una persona comprometida, adaptable y con una sólida
-        ética de trabajo. Poseo habilidades en [menciona tus áreas de
-        experiencia], y estoy siempre dispuesto/a a aprender y crecer
-        profesionalmente. Soy conocido/a por [menciona una cualidad o habilidad
-        específica], y me esfuerzo por colaborar de manera efectiva en equipos
-        multidisciplinarios. Estoy emocionado/a por nuevas oportunidades que me
-        permitan contribuir y seguir desarrollándome
-      </p>
+      <p className="text-center" style={{ textAlign: "center",  fontSize:"15px"}}>
+  Me describo como una persona comprometida, adaptable y con una sólida ética
+  de trabajo. Poseo habilidades en [menciona tus áreas de experiencia], y estoy
+  siempre dispuesto/a a aprender y crecer profesionalmente. Soy conocido/a por
+  [menciona una cualidad o habilidad específica], y me esfuerzo por colaborar
+  de manera efectiva en equipos multidisciplinarios. Estoy emocionado/a por
+  nuevas oportunidades que me permitan contribuir y seguir desarrollándome
+</p>
+
     </div>
   );
 };
