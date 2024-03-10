@@ -10,7 +10,7 @@ export const Slider = () => {
       data-bs-ride="carousel"
     >
       <div className="title-header" style={{fontSize:"19px"}}>
-        24x7 Servicios Generales Expertos en Limpieza de Servicio Especializado
+        24x7 Servicios Generales Expertos 33 en Limpieza de Servicio Especializado
         en Centro Educativos y Instituciones. Creamos espacios de aprendizaje
         sanitizados y confortables.
       </div>
