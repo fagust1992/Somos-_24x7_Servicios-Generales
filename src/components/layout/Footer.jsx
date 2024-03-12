@@ -1,53 +1,63 @@
 import React from "react";
-
-import img1 from "../../assets/icono_facebook.png";
-
+import { Link } from "react-router-dom";
+import img1 from "../../assets/icono-correo.png";
 import img3 from "../../assets/icono_instagram.png";
 import img4 from "../../assets/icono-whastpp.png";
-
-
-
 import { Banner_footer } from "./Banner_Footer";
+
 const Footer = () => {
   return (
     <footer className="footer-container ">
-  
-      <section class="clientes">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="titulo">Nuestras Redes</h3>
+      <section className="clientes">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h3 className="titulo">Nuestras Redes</h3>
             </div>
           </div>
 
-          <div class="row">
-            <div class="cliente col-xs-6 col-md-3">
-              <a href="#">
+          <div className="row">
+            <div className="cliente col-xs-6 col-md-3 text-white">
+          
                 <img
                   src={img1}
-                  alt=""
-                  style={{ width: "70px", height: "70px" }}
+                  alt="Facebook"
+                  style={{ width: "70px", height: "70px"}}
                 />
-              </a>
+         24x7sgenerales@gmail.com
             </div>
 
-            <div class="cliente col-xs-6 col-md-3">
-              <a href="#">
+
+            <div className="cliente col-xs-6 col-md-3">
+              <Link to="https://www.instagram.com/24x7serviciosgenerales?igsh=MzRlODBiNWFlZA==">
                 <img
                   src={img3}
-                  alt=""
+                  alt="Instagram"
                   style={{ width: "70px", height: "70px" }}
                 />
-              </a>
+               
+              </Link>
+              <p>
+                <Link to="https://www.instagram.com/24x7serviciosgenerales?igsh=MzRlODBiNWFlZA==">
+               has click
+                </Link>
+              </p>
             </div>
-            <div class="cliente col-xs-6 col-md-3">
-              <a href="#">
+
+            <div className="cliente col-xs-6 col-md-3">
+              <Link to="https://wa.me/+56942579880">
                 <img
                   src={img4}
-                  alt=""
+                  alt="Icono de WhatsApp"
+                  className="icono-whatsapp"
                   style={{ width: "70px", height: "70px" }}
                 />
-              </a>
+              </Link>
+              <p>
+                <Link to="https://wa.me/+56942579880">
+                  Escribenos por WhatsApp
+                </Link>
+              </p>
             </div>
           </div>
         </div>
@@ -58,3 +68,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

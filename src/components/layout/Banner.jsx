@@ -18,9 +18,9 @@ const Banner = () => {
 
   return (
     <div className="container-fluid" style={{ background: "#D1D4D9" }}>
-      
+
       <div className="row align-items-center">
-      
+
         <div className="col-md-6">
           <img
             src={img1}
@@ -30,7 +30,7 @@ const Banner = () => {
           />
         </div>
         <div className="col-md-6">
-          <div className="p-4" style={{ background: "#B3FAE9",  fontSize:"15px"}}>
+          <div className="p-4" style={{ background: "#B3FAE9", fontSize: "15px" }}>
             <h2 className="text-primary">Ambientes Educativos Protegidos</h2>
             <p className="text-muted mb-4" style={paragraphStyle}>
               Es nuestro compromiso con la creación de ambientes educativos
@@ -63,13 +63,13 @@ const Banner = () => {
               higiene, sino que también contribuye al bienestar general de la
               comunidad educativa.
             </p>
-           
+
           </div>
         </div>
       </div>
       <div className="row align-items-center">
         <div className="col-md-6">
-          <div className="p-2 " style={{ background: "#F2FAB3",  fontSize:"15px"}}>
+          <div className="p-2 " style={{ background: "#F2FAB3", fontSize: "15px" }}>
             <h2 className="text-primary">Instituciones</h2>
             <p className="text-muted mb-4" style={paragraphStyle}>
               <strong>Compromiso con la Confianza Pública y Privada</strong>: En
@@ -107,7 +107,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <Animation2/>
+      <Animation2 />
     </div>
   );
 

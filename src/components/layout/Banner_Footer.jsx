@@ -4,6 +4,7 @@ import imgUserGroup from "../../assets/icono_confianza.png";
 import imgLightbulb from "../../assets/icono_trabajo_en_Euipo.png";
 import imgMugHot from "../../assets/icono-crecimiento.png";
 
+
 export const Banner_footer = () => {
   const imageSize = "200px";
 
@@ -84,6 +85,8 @@ export const Banner_footer = () => {
           Trabajamos con amor ❤️🩷🧡💛💚💙
         </span>
         <h6 className="text-white mt-2"> Contacto</h6>
+
+        <p className="text-white">RUT: 77114057-2</p>
         <p className="text-white">+56951925873</p>
         <p className="text-white">24x7sgenerales@gmail.com</p>
         <span
