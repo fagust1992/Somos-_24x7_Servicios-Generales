@@ -7,7 +7,7 @@ import { Banner_footer } from "./Banner_Footer";
 
 const Footer = () => {
   return (
-    <footer className="footer-container ">
+    <footer className="footer-container">
       <section className="clientes">
         <div className="container">
           <div className="row">
@@ -18,34 +18,40 @@ const Footer = () => {
 
           <div className="row">
             <div className="cliente col-xs-6 col-md-3 text-white">
-          
-                <img
-                  src={img1}
-                  alt="Facebook"
-                  style={{ width: "70px", height: "70px"}}
-                />
-         24x7sgenerales@gmail.com
+              <img
+                src={img1}
+                alt="Facebook"
+                style={{ width: "70px", height: "70px" }}
+              />
+              24x7sgenerales@gmail.com
             </div>
 
-
             <div className="cliente col-xs-6 col-md-3">
-              <Link to="https://www.instagram.com/24x7serviciosgenerales?igsh=MzRlODBiNWFlZA==">
+              <Link
+                to="https://www.instagram.com/24x7serviciosgenerales?igsh=MzRlODBiNWFlZA=="
+                target="_blank"
+              >
                 <img
                   src={img3}
                   alt="Instagram"
                   style={{ width: "70px", height: "70px" }}
                 />
-               
               </Link>
               <p>
-                <Link to="https://www.instagram.com/24x7serviciosgenerales?igsh=MzRlODBiNWFlZA==">
-               has click
+                <Link
+                  to="https://www.instagram.com/24x7serviciosgenerales?igsh=MzRlODBiNWFlZA=="
+                  target="_blank"
+                >
+                  Has clic aquí
                 </Link>
               </p>
             </div>
 
             <div className="cliente col-xs-6 col-md-3">
-              <Link to="https://wa.me/+56942579880">
+              <Link
+                to="https://wa.me/+56942579880"
+                target="_blank"
+              >
                 <img
                   src={img4}
                   alt="Icono de WhatsApp"
@@ -54,8 +60,11 @@ const Footer = () => {
                 />
               </Link>
               <p>
-                <Link to="https://wa.me/+56942579880">
-                  Escribenos por WhatsApp
+                <Link
+                  to="https://wa.me/+56951925873"
+                  target="_blank"
+                >
+                  Escríbenos por WhatsApp
                 </Link>
               </p>
             </div>
