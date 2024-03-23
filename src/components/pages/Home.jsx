@@ -7,7 +7,7 @@ import ContactForm from "../layout/ContactForm";
 import { Precios_Home } from "../layout/Precios_Home";
 import { Widgets } from "../layout/Wigets";
 
-import { Banner2_home } from "../layout/Banner2_home";
+
 import Footer from "../layout/Footer";
 
 export const Home = () => {
@@ -19,7 +19,7 @@ export const Home = () => {
       <Precios_Home />
       <MiComponenteConFondo />
       <ContactForm />
-      <Banner2_home />
+ 
       <Widgets />
       <Footer />
     </>
