@@ -63,7 +63,7 @@ export const Nav = () => {
             <img
               src={img}
               alt="Icono"
-              style={{ width: "150px", height: "90px" }}
+              style={{ width: "70px", height: "70px" }}
             />
           </a>
         </div>
